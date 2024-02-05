@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>D&D Turn Tracker</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+</head>
+
+<body>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title class="ion-text-center">
+        Dungeons and Dragons Turn Tracker
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!--buttons to start the app-->
+  <ion-content [fullscreen]="true" style="background-color: #cec2ae;">
+    <ion-grid>
+      <ion-row style="height: 100px">
+        <ion-col>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" size="large" href="create-party">
+            <ion-icon name="add-outline"></ion-icon>
+            Create Party
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" size="large" href="join">
+            <ion-icon name="add-outline"></ion-icon>
+            Join Party
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</body>

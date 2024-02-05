@@ -1,0 +1,24 @@
+//App colors
+$tan: #cec2ae;
+$blue: #264c5e;
+$darkRed: #a34c50;
+$lightRed: #e94445;
+$burgundy: #4a2932;
+
+ion-content{
+    --ion-background-color: $tan;
+}
+
+ion-button{
+    --background: #4a2932;
+    color: $tan;
+}
+
+ion-item{
+    --background: #264c5e;
+    color: $tan;
+}
+
+h1{
+    color: #4a2932;
+}

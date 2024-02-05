@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>D&D Turn Tracker</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+</head>
+
+<body>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title class="ion-text-center">
+        Dungeons and Dragons Turn Tracker
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true" style="background-color: #cec2ae;">
+    <ion-grid>
+      <ion-row style="height: 100px">
+        <ion-col>
+          <h1>Create New Character</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-textarea placeholder="Enter Characters Name" class="ion-text-center"></ion-textarea>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h1>Character Stats</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-textarea placeholder="Enter Characters Strength" class="ion-text-center"></ion-textarea>
+        </ion-col>
+        <ion-col>
+          <ion-textarea placeholder="Enter Characters Dexterity" class="ion-text-center"></ion-textarea>
+        </ion-col>
+        <ion-col>
+          <ion-textarea placeholder="Enter Characters Constitution" class="ion-text-center"></ion-textarea>
+        </ion-col>
+        <ion-col>
+          <ion-textarea placeholder="Enter Characters Intelligence" class="ion-text-center"></ion-textarea>
+        </ion-col>
+        <ion-col>
+          <ion-textarea placeholder="Enter Characters Wisdom" class="ion-text-center"></ion-textarea>
+        </ion-col>
+        <ion-col>
+          <ion-textarea placeholder="Enter Characters Charisma" class="ion-text-center"></ion-textarea>
+        </ion-col>
+        <ion-col>
+          <ion-textarea placeholder="Enter Characters Armor Class" class="ion-text-center"></ion-textarea>
+        </ion-col>
+        <ion-col>
+          <ion-textarea placeholder="Enter Characters Initiative" class="ion-text-center"></ion-textarea>
+        </ion-col>
+        <ion-col>
+          <ion-textarea placeholder="Enter Characters Passive Perception" class="ion-text-center"></ion-textarea>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-textarea placeholder="Enter Characters Maximum Hit Points" class="ion-text-center"></ion-textarea>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-text-center">
+        <ion-col>
+          <ion-button size="large" href="/tabs/tab1">Save Character</ion-button>
+          <ion-button size="large" href="tracker">Save and Use Character</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-text-center">
+        <ion-col>
+          <h1>Use Existing Character</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label>Select Character</ion-label>
+            <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Select One">
+              <ion-select-option value="1">Ookla</ion-select-option>
+              <ion-select-option value="2">Zohe</ion-select-option>
+              <ion-select-option value="3">Seran</ion-select-option>
+              <ion-select-option value="4">Ivory</ion-select-option>
+              <ion-select-option value="5">Stadler</ion-select-option>
+              <ion-select-option value="6">Ignom</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-text-center">
+        <ion-col>
+          <ion-button size="large" href="tracker">Use Character</ion-button>
+        </ion-col>
+      </ion-row>
+      <!--Empty rows help create space to keeps buttons from being hidden by tabs bar-->
+      <ion-row>
+        <ion-col>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</body>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>D&D Turn Tracker</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+</head>
+
+<body>
+  <ion-header>
+    <ion-toolbar>
+      <ion-button href="/tabs/tab1">
+        <ion-icon name="arrow-back-outline" size="large" style="color: #cec2ae;"></ion-icon>
+      </ion-button>
+      <ion-title class="ion-text-center">Dungeons and Dragons Tracker</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content style="background-color: #cec2ae;">
+    <ion-grid>
+      <ion-row style="height: 50px">
+        <ion-col>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h1 class="ion-text-center">Create Your Party</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label>Number of Players</ion-label>
+            <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Select One">
+              <ion-select-option value="1">1</ion-select-option>
+              <ion-select-option value="2">2</ion-select-option>
+              <ion-select-option value="3">3</ion-select-option>
+              <ion-select-option value="4">4</ion-select-option>
+              <ion-select-option value="5">5</ion-select-option>
+              <ion-select-option value="6">6</ion-select-option>
+              <ion-select-option value="7">7</ion-select-option>
+              <ion-select-option value="8">8</ion-select-option>
+              <ion-select-option value="9">9</ion-select-option>
+              <ion-select-option value="10">10</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h1 class="ion-text-center">Lobby Code</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-textarea placeholder="123456" class="ion-text-center"></ion-textarea>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-text-center">
+        <ion-col>
+          <ion-button size="large" href="tracker">
+            Start Session
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-content>
+
+</body>
